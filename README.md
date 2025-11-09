@@ -71,14 +71,11 @@ A FastAPI-based Retrieval-Augmented Generation (RAG) microservice that enables q
    FAISS_PATH =data/vector_index.faiss
    EMB_PATH =data/embeddings.npy
    RERANKER =cross-encoder/ms-marco-MiniLM-L-6-v2
-
    EMBED_MODEL=all-MiniLM-L6-v2
    CHUNK_SIZE=400
-
    BASELINE_THRESH = 0.15  # cosine similarity threshold (0–1)
    VECTOR_THRESH = 0.55    # normalized FAISS similarity threshold (0–1)
    HYBRID_THRESH = 0.50    # blended score threshold (0–1)
-
    RATE_LIMIT_PER_MINUTE=100
    RATE_LIMIT_QUERY_PER_MINUTE=30
    RATE_LIMIT_INGEST_PER_MINUTE=10
