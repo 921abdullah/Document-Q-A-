@@ -1,1 +1,16 @@
+fastapi
+fastapi-cache2
+uvicorn
+sqlalchemy
+python-dotenv
+scikit-learn
+sentence-transformers
+faiss-cpu
+loguru
+pytest
+numpy
+python-multipart
+slowapi
+transformers
+torch
 
