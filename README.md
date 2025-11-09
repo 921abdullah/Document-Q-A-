@@ -113,8 +113,14 @@ Configuration can be set via environment variables or defaults will be used:
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `DB_PATH` | `data/documents.db` | SQLite database path |
-| `EMBED_MODEL` | `all-MiniLM-L6-v2` | Sentence transformer model for embeddings |
+| `EMBED_MODEL`| `all-MiniLM-L6-v2` | Sentence transformer model for embeddings |
+| `RERANKER`| `cross-encoder/ms-marco-MiniLM-L-6-v2` | Reranking vectors |
+| `FAISS_PATH` | `data/vector_index.faiss`| FAISS Persistent Storage |
+| `EMB_PATH` | `data/embeddings.npy`| Embeddings Storage path |
 | `CHUNK_SIZE` | `400` | Document chunk size for processing |
+| `BASELINE_THRESH` | `0.15` | Cosine similarity threshold (0–1) |
+| `VECTOR_THRESH` | `0.55` | Normalized FAISS similarity threshold (0–1) |
+| `HYBRID_THRESH` | `0.50` |  Blended score threshold (0–1) |
 | `RATE_LIMIT_PER_MINUTE` | `100` | General rate limit per IP |
 | `RATE_LIMIT_QUERY_PER_MINUTE` | `30` | Query endpoint rate limit |
 | `RATE_LIMIT_INGEST_PER_MINUTE` | `10` | Ingest endpoint rate limit |
